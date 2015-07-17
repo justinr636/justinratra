@@ -20,13 +20,14 @@ body { margin: 0; padding: 0; width: 100%; }
 					#nav li a:hover { color: #fff; opacity: 1; }
 	
 	#section1, #section2 { width: 100%; }
-	#section1 { background: url('../img/teameditation.jpg') 50% 0 no-repeat fixed; color: #fff; height: 600px; margin: 0; padding: 200px 0 260px 0; background-size: cover; }
-	#section2 { background: url('../img/hardlyworking.jpg') 50% 0 no-repeat fixed; color: #333333; height: 300px; margin: 0 auto; padding: 200px 0; overflow: hidden; background-size: cover; }
+	#section1 { background: url('../img/teameditation.jpg') 50% 0 no-repeat fixed; color: #fff; height: 500px; margin: 0; padding: 200px 0 260px 0; background-size: cover; }
+		#section1-content { width: 45%; background-color: rgba(0, 0, 0, 0.4); border-radius: 6px; margin-left: 10px; padding: 5px 10px 5px 10px; }
+			#section1-content * { text-align: left !important; color: white; list-style-type: square; }
+	#section2 { background: url('../img/hardlyworking.jpg') 50% 0 no-repeat fixed; color: #333333; height: 900px; margin: 0 auto; padding: 200px 0; overflow: hidden; background-size: cover; }
+		#section2-content { width: 55%; background-color: rgba(0, 0, 0, 0.4); border-radius: 6px; margin-left: 10px; padding: 5px 10px 5px 10px; }
+			#section2-content * { text-align: left !important; color: white; }
 	#section3 { background: url('../img/elephants.jpg') 50% 0 no-repeat fixed; color: #fff; height: 600px; padding: 170px 0 0 0; background-size: cover; }
-	#section4 { background: url('../img/templemeditation.jpg') 50% 100% no-repeat fixed; color: #333333; height: 450px; padding: 200px 0; background-size: cover; }
+	#section4 { background: url('../img/templemeditation.jpg') 50% 100% no-repeat fixed; color: #333333; height: 500px; padding: 200px 0; background-size: cover; }
+		#world-map { max-width: 960px; height: 650px; margin: auto; background-color: rgba(0, 0, 0, 0.4); border-radius: 6px; }
+			svg, svg * { overflow: visible !important; }
 
-	#section1 ul { list-style-type: none; }
-	#section2 ul { list-style-type: none; }
-	#section3 ul { list-style-type: none; }
-	#section4 ul { list-style-type: none; }
-	ul > li > h4 { text-align: center; }
