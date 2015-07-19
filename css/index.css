@@ -27,6 +27,12 @@ body { margin: 0; padding: 0; width: 100%; }
 		#section2-content { width: 55%; background-color: rgba(0, 0, 0, 0.4); border-radius: 6px; margin-left: 10px; padding: 5px 10px 5px 10px; }
 			#section2-content * { text-align: left !important; color: white; }
 	#section3 { background: url('../img/elephants.jpg') 50% 0 no-repeat fixed; color: #fff; height: 600px; padding: 170px 0 0 0; background-size: cover; }
+		#section3-content { width: 95%; height: 80%; background-color: rgba(0, 0, 0, 0.4); border-radius: 6px; margin-left: 10px; margin: auto; padding: 5px 10px 5px 10px; }
+			#section3-content * { color: white; }
+			.thumb { display: inline; width: 33%; float: left; }
+				.thumb-title { height: 108px; }
+				.thumb a img { display: block; margin: 10px auto; background-color: white; border: 5px solid white; }
+				.thumb a:hover img { background-color: #0645AD; border: 5px solid #0645AD; }
 	#section4 { background: url('../img/templemeditation.jpg') 50% 100% no-repeat fixed; color: #333333; height: 500px; padding: 200px 0; background-size: cover; }
 		#world-map { max-width: 960px; height: 650px; margin: auto; background-color: rgba(0, 0, 0, 0.4); border-radius: 6px; }
 			svg, svg * { overflow: visible !important; }
