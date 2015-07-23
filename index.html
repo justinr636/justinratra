@@ -5,6 +5,7 @@
 	<title>Justin Ratra</title>
 
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/d3.v3.min.js"></script>
@@ -19,21 +20,23 @@
 </head>
 
 <body>
+	<!-- Nav Menu -->
 	<header id="header">
 		<div id="header-content">
 			<div id="logo"><a href=""> Justin Ratra </a></div>
 			
 			<nav id="nav">
 				<ul>
-					<li><a href="#section1" title="Next Section">About Me</a></li>
-					<li><a href="#section2" title="Next Section">Work Experience</a></li>
-					<li><a href="#section3" title="Next Section">Samples of Work</a></li>
-					<li><a href="#section4" title="Next Section">Places I've Been</a></li>
+					<li><a href="#section1" title="About">About Me</a></li>
+					<li><a href="#section2" title="Work">Work Experience</a></li>
+					<li><a href="#section3" title="Samples">Samples of Work</a></li>
+					<li><a href="#section4" title="Travel">Places I've Been</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
+	<!-- About Me Section -->
 	<div id="section1">
 		<div id="section1-content">
 			<h3>Hello, my name is Justin Ratra and I am a full-stack web developer based in New York.</h3>
@@ -49,6 +52,7 @@
 			<a href="https://github.com/justinr636"><h3>Check me out on GitHub</h3></a>
 		</div>
 	</div>
+	<!-- Work Experience Section -->
 	<div id="section2">
 		<div id="section2-content">
 			<div id="right-section">
@@ -118,6 +122,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- Samples of Work Section -->
 	<div id="section3">
 		<div id="section3-content">
 			<h2><u>Samples of Work</u></h2>
@@ -126,7 +131,7 @@
 				<div class="thumb-title">
 					<h3>Northeastern NeoQic - NAS Reporting Tool</h3>
 				</div>
-				<a href="http://justinr636.github.io/Dashboard.html">
+				<a href="http://justinr636.github.io/Dashboard.html" target="_blank">
 					<img width="300" height="250" src="img/nnrt.png" />
 				</a>
 			</div>
@@ -134,7 +139,7 @@
 				<div class="thumb-title">
 					<h3>Hercules Technology Growth Capital (HTGC) - Event Manager <small>(Documentation)</small></h3>
 				</div>
-				<a href="files/EventManDocumentation.pdf">
+				<a href="files/EventManDocumentation.pdf" target="_blank">
 					<img width="300" height="250" src="img/eventman.png" />
 				</a>
 			</div>
@@ -142,12 +147,13 @@
 				<div class="thumb-title">
 					<h3>Hercules Technology Growth Capital (HTGC) - Message Manager <small>(Documentation)</small></h3>
 				</div>
-				<a href="files/msgManDoc.pdf">
+				<a href="files/msgManDoc.pdf" target="_blank">
 					<img width="300" height="250" src="img/messageman.png" />
 				</a>
 			</div>
 		</div>
 	</div>
+	<!-- Places I've Been Section -->
 	<div id="section4">
 		<div id="section4-content">
 			<div id="world-map"></div>
@@ -156,6 +162,7 @@
 
 	<script type="text/javascript">
 	$(document).ready(function () {
+		// Creates World Map
 		var map = new Datamap({ 
 			element: document.getElementById('world-map'),
 			projection: 'mercator',
@@ -163,11 +170,10 @@
 				popupOnHover: 'true'
 			},
 			fills: {
-				defaultFill: 'rgb(179, 187, 177)',
-				beenFill: 'rgb(34, 210, 9)'
-				//beenFill: 'rgb(80, 100, 150)'
+				defaultFill: 'rgb(179, 187, 177)',		// All Countries' Color
+				beenFill: 'rgb(34, 210, 9)'				// Visited Countries' Color
 			},
-			data: {
+			data: {	// List of Countries I have visited
 				BEL: { fillKey: "beenFill" },
 				BHS: { fillKey: "beenFill" },
 				CAN: { fillKey: "beenFill" },
@@ -185,6 +191,39 @@
 				VNM: { fillKey: "beenFill" }
 			}
 		});
+
+		// Handle Navigation / Scrolling Animations
+		$("#nav li a").click(function () {
+			// Highlight proper Nav Item
+			$("#nav li a").removeClass("active");
+			$(this).addClass("active");
+
+			// Scroll to proper Section
+			var targetOffset = $(this.hash).offset().top;
+			$("html, body").animate( { scrollTop: targetOffset }, 1000);
+		});
+		var section1 = $("#section1").offset().top;
+		var section2 = $("#section2").offset().top;
+		var section3 = $("#section3").offset().top;
+		var section4 = $("#section4").offset().top;
+		$(window).scroll(function () {
+			var position = $(window).scrollTop();
+
+			if (position >= section1 && position < section2) {
+				$("#nav li a").removeClass("active");
+				$("#nav li:nth-child(1) a").addClass("active");
+			} else if (position >= section2 && position < section3) {
+				$("#nav li a").removeClass("active");
+				$("#nav li:nth-child(2) a").addClass("active");
+			} else if (position >= section3 && position < section4) {
+				$("#nav li a").removeClass("active");
+				$("#nav li:nth-child(3) a").addClass("active");
+			} else {
+				$("#nav li a").removeClass("active");
+				$("#nav li:nth-child(4) a").addClass("active");
+			}
+		});
+
 	});
 	</script>
 </body>
