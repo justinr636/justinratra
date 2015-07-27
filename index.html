@@ -205,8 +205,9 @@
 		// Handle Navigation / Scrolling Animations
 		$("#nav li a").click(function () {
 			// Highlight proper Nav Item
-			$("#nav li a").removeClass("active");
-			$(this).addClass("active");
+			// already done in Scrolling Function 
+			//$("#nav li a").removeClass("active");
+			//$(this).addClass("active");
 
 			// Scroll to proper Section
 			var targetOffset = $(this.hash).offset().top;
