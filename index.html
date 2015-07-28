@@ -11,6 +11,8 @@
 	<script type="text/javascript" src="js/d3.v3.min.js"></script>
 	<script type="text/javascript" src="js/topojson.min.js"></script>
 	<script type="text/javascript" src="js/datamaps.world.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 	<!-- Google Analytics -->
 	<script>
   		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -22,221 +24,184 @@
   		ga('send', 'pageview');
 	</script>
 
-	<link type="text/css" rel="stylesheet" href="css/index.css"></link>
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"></link>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css"></link>
+	<link type="text/css" rel="stylesheet" href="css/index.css"></link>
+
 
 </head>
 
 <body>
 	<!-- Nav Menu -->
-	<header id="header">
-		<div id="header-content">
-			<div id="logo"><a href=""> Justin Ratra </a></div>
+	<nav class="navbar navbar-default navbar-fixed-top" id="header">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a id="logo" class="navbar-brand" href="#"> Justin Ratra </a>
+			</div>
 			
-			<nav id="nav">
-				<ul>
-					<li><a href="#section1" title="About">About Me</a></li>
+			<div id="nav" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#section1" title="About">About Me</a></li>
 					<li><a href="#section2" title="Work">Work Experience</a></li>
 					<li><a href="#section3" title="Samples">Samples of Work</a></li>
 					<li><a href="#section4" title="Travel">Places I've Been</a></li>
 				</ul>
-			</nav>
+			</div>
 		</div>
-	</header>
+	</nav>
 
-	<!-- About Me Section -->
-	<div id="section1">
-		<div id="section1-content">
-			<h3>Hello, my name is Justin Ratra and I am a full-stack web developer based in New York.</h3>
-			<br />
-			<h3>Things I love:</h3>
-			<ul>
-				<li><h3>Programming</h3></li>
-				<li><h3>Cooking (and eating)</h3></li>
-				<li><h3>Meeting new people</h3></li>
-				<li><h3>Traveling</h3></li>
-			</ul>
-			<br />
-			<a href="https://github.com/justinr636"><h3>Check me out on GitHub</h3></a>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- About Me Section -->
+			<div class="container-fluid section" id="section1">
+				<div class="row" id="section1-content">
+					<div class="text-box col-xs-12 col-sm-8 col-md-6">
+						<h3>Hello, my name is Justin Ratra and I am a full-stack web developer based in New York.</h3>
+						<br />
+						<h3>Things I love:</h3>
+						<ul>
+							<li><h3>Programming</h3></li>
+							<li><h3>Cooking (and eating)</h3></li>
+							<li><h3>Meeting new people</h3></li>
+							<li><h3>Traveling</h3></li>
+						</ul>
+						<br />
+						<a href="https://github.com/justinr636"><h3>Check me out on GitHub</h3></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- Work Experience Section -->
+			<div class="container-fluid section" id="section2">
+				<div class="row center" id="section2-content">
+					<div class="text-box col-xs-18 col-sm-8 col-md-8">
+						<div id="cv-section" class="left-section">
+							<h3>Hercules Technology Growth Capital</h3>
+							<ul>
+								<li><h4>Ported a windows application to an ASP.NET web application, added more features based on user requests, and enabled data management to be more intuitive and robust.</h4></li>
+								<li><h4>Designed an intranet and created a news feed to allow all employees to keep track of new deals and updates.</h4></li>
+								<li><h4>Developed and enhanced a system in Ruby on Rails to allow tracking and trending of analysts' performance.</h4></li>
+								<li><h4>Built a web application enabling managing directors to be alerted of clients that need attention.</h4></li>
+								<li><h4>Developed a live chat application using SignalR (a Microsoft equivalent of NodeJS).</h4></li>
+								<li><h4>Created a web application to manage football season tickets and raffle away extra seats.</h4></li>
+							</ul>
+							<h3>Intel</h3>
+							<ul>
+								<li><h4>Compiled data from the factory using SQL queries into reports for operational managers’ day-to-day decisions.</h4></li>
+								<li><h4>Received many recognitions by helping departments automate and organize their systems using VBA.</h4></li>
+								<li><h4>Regularly made improvements to simulation systems to effectively goal factory workers.</h4></li>
+								<li><h4>Worked in a Kaizen to efficiently update systems, integrating new products being ramped for production.</h4></li>
+								<li><h4>Tracked work on multiple projects daily while prioritizing and managing project deadlines.</h4></li>
+								<li><h4>Proactively volunteered to take a Python training crash course.</h4></li>
+							</ul>
+							<h3>NxStage Medical</h3>
+							<ul>
+								<li><h4>Evaluated customer returns to determine failure modes and identify root causes of problems.</h4></li>
+								<li><h4>Created and implemented a system to track and trend issues from failure analysis.</h4></li>
+								<li><h4>Performed a validation protocol (VP) to increase annual savings by testing alternative materials for production use.</h4></li>
+								<li><h4>Planned and prepared two weeks for the VP in order to meticulously complete the month-long validation testing.</h4></li>
+								<li><h4>Ran reliability testing and implemented changes to disposable products to improve form, fit, and function.</h4></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-1 col-md-1">
+					</div>
+					<div class="text-box col-xs-18 col-sm-3 col-md-3">
+						<div id="lang-section">
+							<h3>Programming Languages</h3> 
+							<hr />
+							<h4>C#, C++, Ruby, Python, Visual Basic, SQL, JavaScript, HTML, CSS</h4>
+						</div>
+						<br />
+						<div id="frame-section">
+							<h3>Frameworks/Libraries</h3>
+							<hr />
+							<h4>.NET, SignalR, Rails, jQuery, NodeJS, D3.js, KnockoutJS</h4>
+						</div>
+						<br />
+						<div id="database-section">
+							<h3>Databases</h3>
+							<hr />
+							<h4>MySQL, MS SQL Server, MS Access, MongoDB</h4>
+						</div>
+						<br />
+						<div id="source-section">
+							<h3>Source Control</h3>
+							<hr />
+							<h4>Git, TFVC</h4>
+						</div>
+						<br />
+						<div id="education-section">
+							<h3>Education</h3>
+							<hr />
+							<h4>Northeastern University</h4>
+							<ul>
+								<li><h4>Bachelor of Science in Industrial Engineering</h4></li>
+								<li><h4>Minor in Computer Engineering</h4></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- Samples of Work Section -->
+			<div class="container-fluid section" id="section3">
+				<div class="row center" id="section3-content">
+					<div class="text-box col-xs-12 col-sm-12 col-md-12">
+						<h2><u>Samples of Work</u></h2>
+						<br />
+						<div class="row">
+							<div class="text-center col-xs-12 col-sm-4 col-md-4" id="nnrt-section">
+								<div class="thumb-title">
+									<h3>Northeastern NeoQic - NAS Reporting Tool</h3>
+								</div>
+								<a href="http://justinr636.github.io/Dashboard.html" target="_blank">
+									<img width="300" height="250" src="img/nnrt.png" />
+								</a>
+							</div>
+							<div class="text-center col-xs-12 col-sm-4 col-md-4" id="eventman-section">
+								<div class="thumb-title">
+									<h3>Hercules Technology Growth Capital (HTGC) - Event Manager <small>(Documentation)</small></h3>
+								</div>
+								<a href="files/EventManDocumentation.pdf" target="_blank">
+									<img width="300" height="250" src="img/eventman.png" />
+								</a>
+							</div>
+							<div class="text-center col-xs-12 col-sm-4 col-md-4" id="msgman-section">
+								<div class="thumb-title">
+									<h3>Hercules Technology Growth Capital (HTGC) - Message Manager <small>(Documentation)</small></h3>
+								</div>
+								<a href="files/msgManDoc.pdf" target="_blank">
+									<img width="300" height="250" src="img/messageman.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- Places I've Been Section -->
+			<div class="container-fluid section" id="section4">
+				<div class="row" id="section4-content">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="text-box" id="world-map"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<!-- Work Experience Section -->
-	<div id="section2">
-		<div id="section2-content">
-			<div id="right-section">
-				<div id="lang-section">
-					<h3>Programming Languages</h3> 
-					<hr />
-					<h4>C#, C++, Ruby, Python, Visual Basic, SQL, JavaScript, HTML, CSS</h4>
-				</div>
-				<br />
-				<div id="frame-section">
-					<h3>Frameworks/Libraries</h3>
-					<hr />
-					<h4>.NET, SignalR, Rails, jQuery, NodeJS, D3.js, KnockoutJS</h4>
-				</div>
-				<br />
-				<div id="database-section">
-					<h3>Databases</h3>
-					<hr />
-					<h4>MySQL, MS SQL Server, MS Access, MongoDB</h4>
-				</div>
-				<br />
-				<div id="source-section">
-					<h3>Source Control</h3>
-					<hr />
-					<h4>Git, TFVC</h4>
-				</div>
-				<br />
-				<div id="education-section">
-					<h3>Education</h3>
-					<hr />
-					<h4>Northeastern University</h4>
-					<ul>
-						<li><h4>Bachelor of Science in Industrial Engineering</h4></li>
-						<li><h4>Minor in Computer Engineering</h4></li>
-					</ul>
-				</div>
-			</div>
-			<div id="left-section">
-				<div id="cv-section" class="left-section">
-					<h3>Hercules Technology Growth Capital</h3>
-					<ul>
-						<li><h4>Ported a windows application to an ASP.NET web application, added more features based on user requests, and enabled data management to be more intuitive and robust.</h4></li>
-						<li><h4>Designed an intranet and created a news feed to allow all employees to keep track of new deals and updates.</h4></li>
-						<li><h4>Developed and enhanced a system in Ruby on Rails to allow tracking and trending of analysts' performance.</h4></li>
-						<li><h4>Built a web application enabling managing directors to be alerted of clients that need attention.</h4></li>
-						<li><h4>Developed a live chat application using SignalR (a Microsoft equivalent of NodeJS).</h4></li>
-						<li><h4>Created a web application to manage football season tickets and raffle away extra seats.</h4></li>
-					</ul>
-					<h3>Intel</h3>
-					<ul>
-						<li><h4>Compiled data from the factory using SQL queries into reports for operational managers’ day-to-day decisions.</h4></li>
-						<li><h4>Received many recognitions by helping departments automate and organize their systems using VBA.</h4></li>
-						<li><h4>Regularly made improvements to simulation systems to effectively goal factory workers.</h4></li>
-						<li><h4>Worked in a Kaizen to efficiently update systems, integrating new products being ramped for production.</h4></li>
-						<li><h4>Tracked work on multiple projects daily while prioritizing and managing project deadlines.</h4></li>
-						<li><h4>Proactively volunteered to take a Python training crash course.</h4></li>
-					</ul>
-					<h3>NxStage Medical</h3>
-					<ul>
-						<li><h4>Evaluated customer returns to determine failure modes and identify root causes of problems.</h4></li>
-						<li><h4>Created and implemented a system to track and trend issues from failure analysis.</h4></li>
-						<li><h4>Performed a validation protocol (VP) to increase annual savings by testing alternative materials for production use.</h4></li>
-						<li><h4>Planned and prepared two weeks for the VP in order to meticulously complete the month-long validation testing.</h4></li>
-						<li><h4>Ran reliability testing and implemented changes to disposable products to improve form, fit, and function.</h4></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Samples of Work Section -->
-	<div id="section3">
-		<div id="section3-content">
-			<h2><u>Samples of Work</u></h2>
-			<br />
-			<div class="thumb" id="nnrt-section">
-				<div class="thumb-title">
-					<h3>Northeastern NeoQic - NAS Reporting Tool</h3>
-				</div>
-				<a href="http://justinr636.github.io/Dashboard.html" target="_blank">
-					<img width="300" height="250" src="img/nnrt.png" />
-				</a>
-			</div>
-			<div class="thumb" id="eventman-section">
-				<div class="thumb-title">
-					<h3>Hercules Technology Growth Capital (HTGC) - Event Manager <small>(Documentation)</small></h3>
-				</div>
-				<a href="files/EventManDocumentation.pdf" target="_blank">
-					<img width="300" height="250" src="img/eventman.png" />
-				</a>
-			</div>
-			<div class="thumb" id="msgman-section">
-				<div class="thumb-title">
-					<h3>Hercules Technology Growth Capital (HTGC) - Message Manager <small>(Documentation)</small></h3>
-				</div>
-				<a href="files/msgManDoc.pdf" target="_blank">
-					<img width="300" height="250" src="img/messageman.png" />
-				</a>
-			</div>
-		</div>
-	</div>
-	<!-- Places I've Been Section -->
-	<div id="section4">
-		<div id="section4-content">
-			<div id="world-map"></div>
-		</div>
-	</div>
-
-	<script type="text/javascript">
-	$(document).ready(function () {
-		// Creates World Map
-		var map = new Datamap({ 
-			element: document.getElementById('world-map'),
-			projection: 'mercator',
-			geographyConfig: {
-				popupOnHover: 'true'
-			},
-			fills: {
-				defaultFill: 'rgb(179, 187, 177)',		// All Countries' Color
-				beenFill: 'rgb(34, 210, 9)'				// Visited Countries' Color
-			},
-			data: {	// List of Countries I have visited
-				BEL: { fillKey: "beenFill" },
-				BHS: { fillKey: "beenFill" },
-				CAN: { fillKey: "beenFill" },
-				CHN: { fillKey: "beenFill" },
-				CZE: { fillKey: "beenFill" },
-				DEU: { fillKey: "beenFill" },
-				ESP: { fillKey: "beenFill" },
-				HKG: { fillKey: "beenFill" },
-				IND: { fillKey: "beenFill" },
-				JPN: { fillKey: "beenFill" },
-				MYS: { fillKey: "beenFill" },
-				NLD: { fillKey: "beenFill" },
-				THA: { fillKey: "beenFill" },
-				USA: { fillKey: "beenFill" },
-				VNM: { fillKey: "beenFill" }
-			}
-		});
-
-		// Handle Navigation / Scrolling Animations
-		$("#nav li a").click(function () {
-			// Highlight proper Nav Item
-			// already done in Scrolling Function 
-			//$("#nav li a").removeClass("active");
-			//$(this).addClass("active");
-
-			// Scroll to proper Section
-			var targetOffset = $(this.hash).offset().top;
-			$("html, body").animate( { scrollTop: targetOffset }, 1000);
-		});
-		var section1 = $("#section1").offset().top;
-		var section2 = $("#section2").offset().top;
-		var section3 = $("#section3").offset().top;
-		var section4 = $("#section4").offset().top;
-		$(window).scroll(function () {
-			var position = $(window).scrollTop();
-
-			if (position >= section1 && position < section2) {
-				$("#nav li a").removeClass("active");
-				$("#nav li:nth-child(1) a").addClass("active");
-			} else if (position >= section2 && position < section3) {
-				$("#nav li a").removeClass("active");
-				$("#nav li:nth-child(2) a").addClass("active");
-			} else if (position >= section3 && position < section4) {
-				$("#nav li a").removeClass("active");
-				$("#nav li:nth-child(3) a").addClass("active");
-			} else {
-				$("#nav li a").removeClass("active");
-				$("#nav li:nth-child(4) a").addClass("active");
-			}
-		});
-
-	});
-	</script>
 </body>
 
 </html>
