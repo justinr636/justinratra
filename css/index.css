@@ -13,16 +13,20 @@
 #section3 {  background: url('../img/elephants.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
 	#section3 h2 { text-align: center; }
 	#section3 .text-box { padding-bottom: 30px; }
-	#section3 img { border: 5px solid white; }
-	#section3 img:hover { border: 5px solid rgb(80, 100, 150); }
+		.thumb-title { height: 90px; }
+		#section3 img { border: 5px solid white; }
+		#section3 img:hover { border: 5px solid rgb(80, 100, 150); }
 #section4 {  background: url('../img/hardlyworking.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
+	#world-map { margin: auto; max-width: 960px; height: 700px; position: relative; }
+
 @media (max-width: 768px) {
 	#section1 {  background: url('../img/tea_mobile.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
 	#section2 {  background: url('../img/stairs_mobile.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
 	#section3 {  background: url('../img/boat_mobile.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
 	#section4 {  background: url('../img/ruins_mobile.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
+		#world-map { height: 500px; }
 }
-	#world-map { margin: auto; max-width: 960px; height: 700px; }
+
 	svg, svg * { overflow: visible !important; }
 
 .text-box { background: rgba(0, 0, 0, 0.75); border-radius: 6px; color: white; font-family: 'Oswald'; }

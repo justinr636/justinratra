@@ -20,7 +20,7 @@ $(document).ready(function() {
 			var position = $(window).scrollTop();
 
 			for (var i = offsetArr.length; i > 0; i--) {
-				if (position >= offsetArr[i-1]) {
+				if (position >= (offsetArr[i-1] - 20)) {
 					$("#nav li").removeClass("active");
 					$("#nav li:nth-child(" + i + ")").addClass("active");
 					break;
@@ -32,6 +32,7 @@ $(document).ready(function() {
 		var map = new Datamap({ 
 			element: document.getElementById('world-map'),
 			projection: 'mercator',
+			responsive: true,
 			geographyConfig: {
 				popupOnHover: 'true'
 			},
@@ -56,5 +57,9 @@ $(document).ready(function() {
 				USA: { fillKey: "beenFill" },
 				VNM: { fillKey: "beenFill" }
 			}
+		});
+
+		$(window).on("resize", function () {
+			map.resize();
 		});
 });
