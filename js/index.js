@@ -50,7 +50,9 @@ $(document).ready(function() {
 				NLD: { fillKey: "beenFill" },
 				THA: { fillKey: "beenFill" },
 				USA: { fillKey: "beenFill" },
-				VNM: { fillKey: "beenFill" }
+				VNM: { fillKey: "beenFill" },
+				HUN: { fillKey: "beenFill" },
+				AUT: { fillKey: "beenFill" },
 			}
 		});
 
