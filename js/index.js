@@ -40,6 +40,7 @@ function populateWorldMap() {
         BHS: { fillKey: 'beenFill' },
         CAN: { fillKey: 'beenFill' },
         CHN: { fillKey: 'beenFill' },
+        COL: { fillKey: 'beenFill' },
         CZE: { fillKey: 'beenFill' },
         DEU: { fillKey: 'beenFill' },
         ESP: { fillKey: 'beenFill' },
@@ -50,6 +51,7 @@ function populateWorldMap() {
         NLD: { fillKey: 'beenFill' },
         THA: { fillKey: 'beenFill' },
         USA: { fillKey: 'beenFill' },
+        PER: { fillKey: 'beenFill' },
         VNM: { fillKey: 'beenFill' },
         HUN: { fillKey: 'beenFill' },
         AUT: { fillKey: 'beenFill' },
@@ -63,6 +65,6 @@ function populateWorldMap() {
 }
 
 $(document).ready(function() {
-	handlePageNavigation();
-  populateWorldMap();
+  handlePageNavigation();
+  setTimeout(populateWorldMap, 1000);
 });
