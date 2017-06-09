@@ -9,14 +9,14 @@
 
 .section { padding: 200px 50px; height: auto !important; }
 #section1 {  background: url('../img/teameditation.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
-#section2 {  background: url('../img/templemeditation.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
+#section2 {  background: url('../img/paragliding.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
 #section3 {  background: url('../img/elephants.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
   #section3 h2 { text-align: center; }
   #section3 .text-box { padding-bottom: 30px; }
     .thumb-title { height: 90px; }
     #section3 img { border: 5px solid white; }
     #section3 img:hover { border: 5px solid rgb(80, 100, 150); }
-#section4 {  background: url('../img/hardlyworking.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
+#section4 {  background: url('../img/rainbow_mountain.jpg') 50% 0 no-repeat fixed; background-size: cover; -webkit-background-size: cover; background-attachment: scroll; }
   #world-map { margin: auto; max-width: 960px; height: 700px; position: relative; }
 
 @media (max-width: 768px) {
