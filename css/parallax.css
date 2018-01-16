@@ -1,0 +1,100 @@
+﻿.about, .skills, .experience, .contact, .hobbies, .education, .portfolio {
+  position: relative;
+  opacity: 1;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  background-attachment: fixed;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+
+}
+
+.about, .portfolio {
+  background-image: url('../images/home1.jpg');
+}
+
+.skills {
+  background-image: url('../images/1.jpg');
+}
+
+.education {
+  background-image: url('../images/home1.jpg');
+}
+
+.experience {
+  background-image: url('../images/3.jpg');
+}
+
+.hobbies {
+  background-image: url('../images/2.jpg');
+
+}
+
+.contact {
+  background-image: url('../images/4.jpg');
+}
+
+.experience .container .experience-content .timeline {
+  background: rgba(0, 0, 0, 0.80);
+}
+
+.skills .container .skills-content {
+  background: rgba(0, 0, 0, 0.80);
+}
+
+.hobbies .container .hobbies-content {
+  background: rgba(0, 0, 0, 0.80);
+}
+
+@media only screen and (max-width: 500px) {
+
+  .about {
+    background: url(../images/mHome1.jpg);
+    background-position: center top;
+  }
+
+  .education {
+    background: url(../images/mHome1.jpg);
+    background-position: center top;
+  }
+
+  .skills {
+    background: url('../images/mobile_skills.jpg');
+    background-position: center top;
+  }
+
+  .experience {
+    background: url('../images/mobile_Experiences.jpg');
+    background-position: center top;
+  }
+
+  .hobbies {
+    background: url('../images/mobile_hobbies.jpg');
+    background-position: center top;
+  }
+
+  .contact {
+    background: url('../images/mobile_map.jpg');
+    background-position: center center;
+  }
+
+  .experience .container .experience-content .timeline {
+    background: rgba(0, 0, 0, 0.80);
+  }
+
+  .skills .container .skills-content {
+    background: rgba(0, 0, 0, 0.80);
+  }
+
+  .hobbies .container .hobbies-content {
+    background: rgba(0, 0, 0, 0.80);
+  }
+}

@@ -1,223 +1,592 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
-  <title>Justin Ratra</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="js/d3.v3.min.js"></script>
-  <script type="text/javascript" src="js/topojson.min.js"></script>
-  <script type="text/javascript" src="js/datamaps.world.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <!-- Google Analytics -->
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-61853517-2', 'auto');
-      ga('send', 'pageview');
-  </script>
-  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"></link>
-  <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css"></link>
-  <link type="text/css" rel="stylesheet" href="css/index.css"></link>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Justin Ratra - Full Stack Web Developer</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <link href="css/Responsive.css" rel="stylesheet" type="text/css"/>
+  <link href="css/parallax.css" rel="stylesheet" type="text/css"/>
+  <link href="css/custom.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
+  <!-- Start Navigation Bar -->
+  <ul class="navigation-bar">
 
-  <!-- Nav Menu -->
-  <nav class="navbar navbar-default navbar-fixed-top" id="header">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a id="logo" class="navbar-brand" href="#"> Justin Ratra </a>
+    <li>
+      <i data-value="about" class="fa fa-user-circle-o about-button active" aria-hidden="true"></i>
+      <div class="title"><span>About me</span></div>
+    </li>
+    <li>
+      <i data-value="skills" class="fa fa-tasks skills-button" aria-hidden="true"></i>
+      <div class="title"><span>Skills</span></div>
+    </li>
+    <li>
+      <i data-value="education" class="fa fa-graduation-cap education-button" aria-hidden="true"></i>
+      <div class="title"><span>Education</span></div>
+    </li>
+    <li>
+      <i data-value="experience" class="fa fa-cogs experience-button" aria-hidden="true"></i>
+      <div class="title"><span>Work Experience</span></div>
+    </li>
+    <li>
+      <i data-value="portfolio" class="fa fa-briefcase portfolio-button" aria-hidden="true"></i>
+      <div class="title"><span>Samples of Work</span></div>
+    </li>
+
+    <li>
+      <i data-value="hobbies" class="fa fa-heart hobbies-button" aria-hidden="true"></i>
+      <div class="title"><span>Hobbies</span></div>
+    </li>
+    <li>
+      <i data-value="contact" class="fa fa-map-marker contact-button" aria-hidden="true"></i>
+      <div class="title"><span>Places I've Been</span></div>
+    </li>
+  </ul>
+  <div class="mobile-menu" style=" background-color:Black;">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+    <i class="fa fa-times" aria-hidden="true"></i>
+  </div>
+  <!-- End Navigation Bar -->
+
+  <!-- Start About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="profile-info">
+          <div class="user-img">
+            <img src="images/profile.jpg" alt="I'm Justin Ratra">
+          </div>
+          <img src="images/logo_white.png"/>
+          <ul>
+            <li style=" height:30px;">
+              <p style=" font-weight:bold;" class="typewrite" data-period="2000"
+                 data-type='[ "Full-Stack Developer.", "Back End Developer.", "Software Developer.", "From New York." ]'></p>
+            </li>
+          </ul>
+
+          <p style=" font-size:16px;">
+            Hello, my name is Justin Ratra and I am a full-stack web developer born and raised in New York
+          </p>
+        </div>
+        <div class="profile-list">
+          <table>
+            <tbody>
+
+            <tr>
+              <td>e-mail&#58;</td>
+              <td>justinr636@gmail.com</td>
+            </tr>
+
+            <tr>
+              <td>website&#58;</td>
+              <td><a href="#" target="_blank">www.justinratra.com</a></td>
+            </tr>
+            <tr>
+              <td>Location&#58;</td>
+              <td>USA</td>
+            </tr>
+            </tbody>
+          </table>
+          <ul class="social-links">
+            <li>
+              <a href="skype:live:justinr636?call" target="_blank" title="Follow Me on skype">
+                <i class="fa fa-skype" aria-hidden="true"></i>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/justin-ratra-404a0350/" target="_blank" title="Follow Me on Linkedin">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/justinr636" target="_blank" title="Follow Me on Github">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/u/0/109636738396348303778" target="_blank"
+                 title="Follow Me on Google Plus">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+          <a class="download-resume" href="images/files/JustinRatra-ResumeRevP.pdf" target="_blank">Download Resume</a>
+
+        </div>
       </div>
-      <div id="nav" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#section1" title="About">About Me</a></li>
-          <li><a href="#section2" title="Work">Work Experience</a></li>
-          <li><a href="#section3" title="Samples">Samples of Work</a></li>
-          <li><a href="#section4" title="Travel">Places I've Been</a></li>
+    </div>
+  </section>
+  <!-- End About -->
+
+  <!-- Start Skills -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2><i class="fa fa-tasks" aria-hidden="true"></i> SKILLS</h2>
+      <div class="skills-content">
+        <div class="progress-content">
+          <div class="personal-skills">
+            <h4>
+              <i class="fa fa-user" aria-hidden="true"></i>
+              personal skills
+            </h4>
+            <div class="progress-bar">
+              <div class="bar-data">
+                <span class="bar-title">Communication, Team Work, Creativity, Dedication</span>
+                <!--   <span class="bar-value"><strong>0</strong> %</span>-->
+              </div>
+              <div class="bar-line">
+                <span class="bar-emptyFill"></span>
+                <span class="bar-fill"></span>
+              </div>
+            </div>
+
+          </div>
+          <div class="professional-skills">
+            <h4>
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              Programming Languages
+            </h4>
+            <div class="progress-bar">
+              <div class="bar-data">
+                <span class="bar-title">C#, JavaScript, HTML CSS, Python, C++, Go, Rust, PHP, Ruby, VBA, Java</span>
+                <!--   <span class="bar-value"><strong>0</strong> %</span>-->
+              </div>
+              <div class="bar-line">
+                <span class="bar-emptyFill"></span>
+                <span class="bar-fill"></span>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="professional-skills">
+            <h4>
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              Frameworks/Libraries
+            </h4>
+            <div class="progress-bar">
+              <div class="bar-data">
+                <span class="bar-title">NodeJS, ReactJS, AngularJS, jQuery, D3js, KnockoutJS, ASP.NET, Katana, Django, SignalR</span>
+                <!--     <span class="bar-value"><strong>0</strong> %</span>-->
+              </div>
+              <div class="bar-line">
+                <span class="bar-emptyFill"></span>
+                <span class="bar-fill"></span>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="professional-skills">
+            <h4>
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              Databases
+            </h4>
+            <div class="progress-bar">
+              <div class="bar-data">
+                <span class="bar-title">MS SQL Server, PostgreSQL, SQLite, MySQL, MongoDB</span>
+                <!--   <span class="bar-value"><strong>0</strong> %</span>-->
+              </div>
+              <div class="bar-line">
+                <span class="bar-emptyFill"></span>
+                <span class="bar-fill"></span>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="professional-skills">
+            <h4>
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              Source Control
+            </h4>
+            <div class="progress-bar">
+              <div class="bar-data">
+                <span class="bar-title width-100">Git, TFVC (TFS), SVN</span>
+              </div>
+              <div class="bar-line">
+                <span class="bar-emptyFill"></span>
+                <span class="bar-fill"></span>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Skills -->
+
+  <!-- Start Education -->
+  <section id="education" class="education">
+    <div class="container" style=" height:100%;">
+      <h2><i class="fa fa-graduation-cap " aria-hidden="true"></i> EDUCATION</h2>
+      <ul class="education-content1">
+        <li>
+          <div class="timeline wow fadeInLeft" data-wow-duration=".8s" data-wow-offset="100">
+            <h3>2010 &#45; 2015</h3>
+            <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+            <h3>Northeastern University</h3>
+            <p>Bachelor of Science in Industrial Engineering</p>
+            <p>Minor in Computer Engineering</p>
+            <p></p>
+          </div>
+        </li>
+        <li>
+
+        </li>
+
+      </ul>
+    </div>
+  </section>
+  <!-- End Education -->
+
+  <!-- Start Experience -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2><i class="fa fa-cogs" aria-hidden="true"></i> EXPERIENCE</h2>
+      <ul class="experience-content">
+        <li>
+          <div class="timeline wow fadeInLeft" data-wow-duration=".8s" data-wow-offset="100">
+            <span class="date">Oct 2015 &#45; May 2017</span>
+            <h4>Viacom</h4>
+            <h5>Back End Developer</h5>
+            <p>Updated and maintained RESTful Web API's, SOAP Services, and Windows Forms applications.</p>
+            <p>Developed a full user interface (using ReactJS) and a RESTful API (using Owin and Katana).</p>
+            <p>Created unit and integration tests to help document and maintain code function.</p>
+            <p>Held code review meetings to anticipate any issues before merging code.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline wow fadeInRight" data-wow-duration=".8s" data-wow-offset="100">
+            <span class="date">Sep 2014 &#45; May 2015</span>
+            <h4>Northeastern University Healthcare Systems Engineering Institute (HSyE)</h4>
+            <h5>Full Stack Web Developer</h5>
+
+            <p> Northeastern University Healthcare Systems Engineering Institute (HSyE)</p>
+            <p>Developed a standalone web application allowing over 20 hospitals across Massachusetts to seamlessly share
+              data.</p>
+
+            <p>Produced complex reports and graphs (using D3.js) to visualize data trends over time.</p>
+
+            <p>Created detailed documentation to properly explain all functions and features of the application for
+              end-users.</p>
+
+            <p> Maintained a thorough Git repository (<a style=" text-decoration:none; color:Pink;"
+                                                         href="https://github.com/justinr636/capstone" target="_blank">
+              accessible at GitHub </a>)</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline wow fadeInLeft" data-wow-duration=".8s" data-wow-offset="100">
+            <span class="date">Jan 2014 &#45; Jul 2014</span>
+            <h4>Hercules Technology Growth Capital</h4>
+            <h5>Full Stack Web Developer</h5>
+            <p>Ported a windows application to an ASP.NET web application, added more features based on user requests, and
+              enabled data management to be more intuitive and robust. </p>
+            <p>Designed an intranet and created a news feed to allow all employees to keep track of new deals and
+              updates.</p>
+            <p>Developed and enhanced a system in Ruby on Rails to allow tracking and trending of analysts'
+              performance.</p>
+            <p>Built a web application enabling managing directors to be alerted of clients that need attention.</p>
+            <p>Developed a live chat application using SignalR (a Microsoft equivalent of NodeJS).</p>
+            <p>Created a web application to manage football season tickets and raffle away extra seats.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline wow fadeInRight" data-wow-duration=".8s" data-wow-offset="100">
+            <span class="date">Jan 2013 &#45; Jul 2013</span>
+            <h4>Intel</h4>
+            <h5>Industrial Engineering Intern</h5>
+            <p>Compiled data from the factory using SQL queries into reports for operational managers' day-to-day
+              decisions.</p>
+
+            <p>Received many recognitions by helping departments automate and organize their systems using VBA.</p>
+
+            <p>Regularly made improvements to simulation systems to effectively goal factory workers.</p>
+
+            <p>Worked in a Kaizen to efficiently update systems, integrating new products being ramped for production.</p>
+
+            <p>Tracked work on multiple projects daily while prioritizing and managing project deadlines.</p>
+
+            <p>Proactively volunteered to take a Python training crash course.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline wow fadeInLeft" data-wow-duration=".8s" data-wow-offset="100">
+            <span class="date">Jan 2012 &#45; Aug 2012</span>
+            <h4>NxStage Medical</h4>
+            <h5>R&D Disposables Engineer</h5>
+            <p>Evaluated customer returns to determine failure modes and identify root causes of problems.</p>
+
+            <p>Created and implemented a system to track and trend issues from failure analysis.</p>
+
+            <p>Performed a validation protocol (VP) to increase annual savings by testing alternative materials for
+              production use.</p>
+
+            <p>Planned and prepared two weeks for the VP in order to meticulously complete the month-long validation
+              testing.</p>
+
+            <p>Ran reliability testing and implemented changes to disposable products to improve form, fit, and
+              function.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+  <!-- End Experience -->
+
+
+  <!-- Start Samples of Work -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2><i class="fa fa-briefcase" aria-hidden="true"></i> SAMPLES OF WORK</h2>
+      <div class="portfolio-content">
+
+        <div id="work-filtering" class="work-filtering">
+          <div class="mix web">
+            <img src="images/files/nnrt.png" alt=""/>
+            <h4 class="lightbox-heading">Northeastern NeoQic - NAS Reporting Tool</h4>
+            <p class="lightbox-paragraph"></p>
+            <a class="lightbox-preview" href="#" target="_blank">Preview</a>
+            <div class="overlay">
+              <div class="work-details">
+                <div class="animated fadeInDown">
+                  <h4>Northeastern NeoQic - NAS Reporting Tool</h4>
+
+                </div>
+                <div class="animated fadeInUp">
+                  <a href="http://justinr636.github.io/Dashboard.html" target="_blank">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                  </a>
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="mix web">
+            <img src="images/files/eventman.jpg"/>
+            <h4 class="lightbox-heading">Hercules Technology Growth Capital (HTGC) - Event Manager (Documentation)</h4>
+            <p class="lightbox-paragraph"></p>
+            <a class="lightbox-preview" href="#" target="_blank">Preview</a>
+            <div class="overlay">
+              <div class="work-details">
+                <div class="animated fadeInDown">
+                  <h4>Hercules Technology Growth Capital (HTGC) - Event Manager (Documentation)</h4>
+                  <h6></h6>
+                </div>
+                <div class="animated fadeInUp">
+                  <a href="http://justinratra.com/files/EventManDocumentation.pdf" target="_blank">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                  </a>
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="mix web">
+            <img src="images/files/messageman.png"/>
+            <h4 class="lightbox-heading">Hercules Technology Growth Capital (HTGC) - Message Manager (Documentation)</h4>
+            <p class="lightbox-paragraph"></p>
+            <a class="lightbox-preview" href="#" target="_blank">Preview</a>
+            <div class="overlay">
+              <div class="work-details">
+                <div class="animated fadeInDown">
+                  <h4>Hercules Technology Growth Capital (HTGC) - Message Manager (Documentation)</h4>
+                  <h6></h6>
+                </div>
+                <div class="animated fadeInUp">
+                  <a href="http://justinratra.com/files/msgManDoc.pdf" target="_blank">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                  </a>
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Start  zoom -->
+  <div class="portfolio-lightbox">
+    <i class="fa fa-times" aria-hidden="true" title="minimize"></i>
+    <div class="gallery-image">
+      <i class="fa fa-times" aria-hidden="true" title="minimize"></i>
+      <img src="#" alt="">
+      <div class="gallery-text">
+        <h4>sometext</h4>
+        <p></p>
+      </div>
+      <div class="gallery-navigate">
+        <span class="prev" title="Previous"></span>
+        <span class="next" title="Next"></span>
+      </div>
+      <a class="preview-link" href="#" target="_blank">Preview</a>
+    </div>
+  </div>
+  <!-- End  zoom -->
+  <section id="blog" class="blog">
+  </section>
+  <!-- End Samples of Work -->
+
+
+  <!-- Start Hobbies -->
+  <section id="hobbies" class="hobbies">
+    <div class="container">
+      <h2><i class="fa fa-heart" aria-hidden="true"></i> HOBBIES</h2>
+      <div class="hobbies-content">
+        <p><i class="fa fa-hand-o-right" aria-hidden="true"> </i>&nbsp;&nbsp; I live to travel. For me it's all about the
+          extravagant sites I get to see, the people I meet, and, best of all, the food I get to eat.</p>
+        <p><i class="fa fa-hand-o-right" aria-hidden="true"> </i>&nbsp;&nbsp; I love programming. As long as I have a
+          computer with internet connection, I can work from anywhere in the world.</p>
+        <p><i class="fa fa-hand-o-right" aria-hidden="true"> </i>&nbsp;&nbsp; vim > emacs</p>
+        <p><i class="fa fa-hand-o-right" aria-hidden="true"> </i>&nbsp;&nbsp; spaces > tabs </p>
+
+        <ul class="hobbies-icons">
+          <li>
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <span>Programming</span>
+          </li>
+          <li>
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <span>reading</span>
+          </li>
+          <li class="br screen450"></li>
+          <li>
+            <i class="fa fa-plane" aria-hidden="true"></i>
+            <span>travel</span>
+          </li>
+          <li class="br screen991"></li>
+          <li>
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+            <span>eating</span>
+          </li>
+          <li class="br screen450"></li>
+          <li>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+            <span>games</span>
+          </li>
+
         </ul>
       </div>
     </div>
-  </nav>
+  </section>
+  <!-- End Hobbies -->
+  <div class="container" style=" height:25px; width:100%; background-color:#3B3F4C;">
 
-  <div class="container-fluid">
+  </div>
+  <!-- Start Contact + Map set -->
 
-    <!-- About Me Section -->
-    <div class="row">
-      <div class="container-fluid section" id="section1">
-        <div class="row" id="section1-content">
-          <div class="text-box col-xs-12 col-sm-8 col-md-6">
-            <h3>Hello, my name is Justin Ratra and I am a full-stack web developer born and raised in New York.</h3>
-            <br />
-            <ul>
-              <li><h3>I live to travel. For me it's all about the extravagant sites I get to see, the people I meet, and, best of all, the food I get to eat.</h3></li>
-              <li><h3>I love programming. As long as I have a computer with internet connection, I can work from anywhere in the world.</h3></li>
-              <li><h3>vim > emacs</h3></li>
-              <li><h3>spaces > tabs</h3></li>
-            </ul>
-            <br />
-            <h3>Below you will find my resumé (along with all of the languages and software I have experience in), and a map of the countries I have visited.</h3>
-            <h3><a target="_blank" href="https://github.com/justinr636">Check me out on GitHub</a></h3>
-            <h3>Email: <a href="mailto:justinr636@gmail.com">justinr636@gmail.com</a></h3>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div id="contact" class="contact" style=" background-color:Blue;">
+    <h2 style=" text-align:center; padding:70px 10px 0 10px;"><i class="fa fa-map-marker" aria-hidden="true"></i> PLACES
+      I'VE BEEN</h2>
+    <div id="world-map-div" class="" style="">
+      <div class="text-box" id="world-map" style=""></div>
 
-    <!-- Work Experience Section -->
-    <div class="row">
-      <div class="container-fluid section" id="section2">
-        <div class="row center" id="section2-content">
-          <div class="text-box col-xs-18 col-sm-8 col-md-8">
-            <div id="cv-section" class="left-section">
-              <h3>Viacom</h3>
-              <ul>
-                <li><h4>Updated and maintained RESTful Web API’s, SOAP Services, and Windows Forms applications.</h4></li>
-                <li><h4>Developed a full user interface (using ReactJS) and a RESTful API (using Owin and Katana).</h4></li>
-                <li><h4>Created unit and integration tests to help document and maintain code function.</h4></li>
-                <li><h4>Held code review meetings to anticipate any issues before merging code.</h4></li>
-              </ul>
-              <h3>Northeastern University Healthcare Systems Engineering Institute (HSyE)</h3>
-              <ul>
-                <li><h4>Developed a standalone web application allowing over 20 hospitals across Massachusetts to seamlessly share data.</h4></li>
-                <li><h4>Produced complex reports and graphs (using D3.js) to visualize data trends over time.</h4></li>
-                <li><h4>Created detailed documentation to properly explain all functions and features of the application for end-users.</h4></li>
-                <li><h4>Maintained a thorough Git repository (<a href="https://github.com/justinr636/capstone" target="_blank"> accessible at GitHub </a>).</h4></li>
-              </ul>
-              <h3>Hercules Technology Growth Capital</h3>
-              <ul>
-                <li><h4>Ported a windows application to an ASP.NET web application, added more features based on user requests, and enabled data management to be more intuitive and robust.</h4></li>
-                <li><h4>Designed an intranet and created a news feed to allow all employees to keep track of new deals and updates.</h4></li>
-                <li><h4>Developed and enhanced a system in Ruby on Rails to allow tracking and trending of analysts' performance.</h4></li>
-                <li><h4>Built a web application enabling managing directors to be alerted of clients that need attention.</h4></li>
-                <li><h4>Developed a live chat application using SignalR (a Microsoft equivalent of NodeJS).</h4></li>
-                <li><h4>Created a web application to manage football season tickets and raffle away extra seats.</h4></li>
-              </ul>
-              <h3>Intel</h3>
-              <ul>
-                <li><h4>Compiled data from the factory using SQL queries into reports for operational managers’ day-to-day decisions.</h4></li>
-                <li><h4>Received many recognitions by helping departments automate and organize their systems using VBA.</h4></li>
-                <li><h4>Regularly made improvements to simulation systems to effectively goal factory workers.</h4></li>
-                <li><h4>Worked in a Kaizen to efficiently update systems, integrating new products being ramped for production.</h4></li>
-                <li><h4>Tracked work on multiple projects daily while prioritizing and managing project deadlines.</h4></li>
-                <li><h4>Proactively volunteered to take a Python training crash course.</h4></li>
-              </ul>
-              <h3>NxStage Medical</h3>
-              <ul>
-                <li><h4>Evaluated customer returns to determine failure modes and identify root causes of problems.</h4></li>
-                <li><h4>Created and implemented a system to track and trend issues from failure analysis.</h4></li>
-                <li><h4>Performed a validation protocol (VP) to increase annual savings by testing alternative materials for production use.</h4></li>
-                <li><h4>Planned and prepared two weeks for the VP in order to meticulously complete the month-long validation testing.</h4></li>
-                <li><h4>Ran reliability testing and implemented changes to disposable products to improve form, fit, and function.</h4></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-1 col-md-1">
-          </div>
-          <div class="text-box col-xs-18 col-sm-3 col-md-3">
-            <div id="lang-section">
-              <h3>Programming Languages</h3> 
-              <hr />
-              <h4>C#, JavaScript, HTML CSS, Python, C++, Go, Rust, PHP, Ruby, VBA, Java</h4>
-            </div>
-            <br />
-            <div id="frame-section">
-              <h3>Frameworks/Libraries</h3>
-              <hr />
-              <h4>NodeJS, ReactJS, AngularJS, jQuery, D3js, KnockoutJS, ASP.NET, Katana, Django, SignalR</h4>
-            </div>
-            <br />
-            <div id="database-section">
-              <h3>Databases</h3>
-              <hr />
-              <h4>MS SQL Server, PostgreSQL, SQLite, MySQL, MongoDB</h4>
-            </div>
-            <br />
-            <div id="source-section">
-              <h3>Source Control</h3>
-              <hr />
-              <h4>Git, TFVC (TFS), SVN</h4>
-            </div>
-            <br />
-            <div id="education-section">
-              <h3>Education</h3>
-              <hr />
-              <h4>Northeastern University</h4>
-              <ul>
-                <li><h4>Bachelor of Science in Industrial Engineering</h4></li>
-                <li><h4>Minor in Computer Engineering</h4></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Samples of Work Section -->
-    <div class="row">
-      <div class="container-fluid section" id="section3">
-        <div class="row center" id="section3-content">
-          <div class="text-box col-xs-12 col-sm-12 col-md-12">
-            <h2><u>Samples of Work</u></h2>
-            <br />
-            <div class="row">
-              <div class="text-center col-xs-12 col-sm-4 col-md-4" id="nnrt-section">
-                <div class="thumb-title">
-                  <h3>Northeastern NeoQic - NAS Reporting Tool</h3>
-                </div>
-                <a href="http://justinr636.github.io/Dashboard.html" target="_blank">
-                  <img width="300" height="250" src="img/nnrt.png" />
-                </a>
-              </div>
-              <div class="text-center col-xs-12 col-sm-4 col-md-4" id="eventman-section">
-                <div class="thumb-title">
-                  <h3>Hercules Technology Growth Capital (HTGC) - Event Manager <small>(Documentation)</small></h3>
-                </div>
-                <a href="files/EventManDocumentation.pdf" target="_blank">
-                  <img width="300" height="250" src="img/eventman.jpg" />
-                </a>
-              </div>
-              <div class="text-center col-xs-12 col-sm-4 col-md-4" id="msgman-section">
-                <div class="thumb-title">
-                  <h3>Hercules Technology Growth Capital (HTGC) - Message Manager <small>(Documentation)</small></h3>
-                </div>
-                <a href="files/msgManDoc.pdf" target="_blank">
-                  <img width="300" height="250" src="img/messageman.png" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Places I've Been Section -->
-    <div class="row">
-      <div class="container-fluid section" id="section4">
-        <div class="row" id="section4-content">
-          <div id="world-map-div" class="col-xs-12 col-sm-12 col-md-12">
-            <div class="text-box" id="world-map"></div>
-          </div>
-        </div>
-      </div>
     </div>
 
   </div>
 
+  <div class="Myfooter">
+    <ul class="social-links">
+      <li>
+        <a href="skype:live:justinr636?call" target="_blank" title="Follow Me on skype">
+          <i class="fa fa-skype" aria-hidden="true"></i>
+
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.linkedin.com/in/justin-ratra-404a0350/" target="_blank" title="Follow Me on Linkedin">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/justinr636" target="_blank" title="Follow Me on Github">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://plus.google.com/u/0/109636738396348303778" target="_blank" title="Follow Me on Google Plus">
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- End Contact -->
+
+  <!-- start Back to top -->
+
+  <div id="back-top" class="scrollToTop"
+       style="position: fixed; bottom: 7px; opacity:0.8; right:40px; z-index: 9999; cursor: pointer; border: none; display: block;">
+    <a href="#bgimg-1"><img src="images/top.png" alt="top" height="40" width="40"></a></div>
+
+  <!-- End Back to top -->
+
+  <!-- jQuery Library -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.countto.min.js" type="text/javascript"></script>
+  <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+  <script src="js/wow.min.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+  <script src="js/d3.v3.min.js" type="text/javascript"></script>
+  <script src="js/topojson.min.js" type="text/javascript"></script>
+  <script src="js/datamaps.world.min.js" type="text/javascript"></script>
+  <script src="js/index.js" type="text/javascript"></script>
 </body>
+<script>
+
+
+  $(document).ready(function () {
+
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('.scrollToTop').fadeIn();
+      } else {
+        $('.scrollToTop').fadeOut();
+      }
+    });
+
+    //Click event to scroll to top
+    $('.scrollToTop').click(function () {
+      $('html, body').animate({scrollTop: 0}, 800);
+      return false;
+    });
+
+  });
+
+
+</script>
+
 </html>
