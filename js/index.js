@@ -22,6 +22,7 @@ function populateWorldMap() {
       DEU: {fillKey: 'beenFill'},
       ECU: {fillKey: 'beenFill'},
       ESP: {fillKey: 'beenFill'},
+      GBR: {fillKey: 'beenFill'},
       HKG: {fillKey: 'beenFill'},
       HUN: {fillKey: 'beenFill'},
       IND: {fillKey: 'beenFill'},
