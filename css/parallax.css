@@ -18,28 +18,28 @@
 }
 
 .about, .portfolio {
-  background-image: url('../images/home1.jpg');
+  background-image: url('../images/backgrounds/default.jpg');
 }
 
 .skills {
-  background-image: url('../images/1.jpg');
+  background-image: url('../images/backgrounds/1.jpg');
 }
 
 .education {
-  background-image: url('../images/home1.jpg');
+  background-image: url('../images/backgrounds/default.jpg');
 }
 
 .experience {
-  background-image: url('../images/3.jpg');
+  background-image: url('../images/backgrounds/2.jpg');
 }
 
 .hobbies {
-  background-image: url('../images/2.jpg');
+  background-image: url('../images/backgrounds/3.jpg');
 
 }
 
 .contact {
-  background-image: url('../images/4.jpg');
+  background-image: url('../images/backgrounds/4.jpg');
 }
 
 .experience .container .experience-content .timeline {
@@ -57,32 +57,32 @@
 @media only screen and (max-width: 500px) {
 
   .about {
-    background: url(../images/mHome1.jpg);
+    background: url('../images/backgrounds/mobile/default.jpg');
     background-position: center top;
   }
 
   .education {
-    background: url(../images/mHome1.jpg);
+    background: url('../images/backgrounds/mobile/default.jpg');
     background-position: center top;
   }
 
   .skills {
-    background: url('../images/mobile_skills.jpg');
+    background: url('../images/backgrounds/mobile/skills.jpg');
     background-position: center top;
   }
 
   .experience {
-    background: url('../images/mobile_Experiences.jpg');
+    background: url('../images/backgrounds/mobile/experiences.jpg');
     background-position: center top;
   }
 
   .hobbies {
-    background: url('../images/mobile_hobbies.jpg');
+    background: url('../images/backgrounds/mobile/hobbies.jpg');
     background-position: center top;
   }
 
   .contact {
-    background: url('../images/mobile_map.jpg');
+    background: url('../images/backgrounds/mobile/map.jpg');
     background-position: center center;
   }
 
